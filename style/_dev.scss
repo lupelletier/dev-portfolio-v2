@@ -40,9 +40,7 @@
         top: 50%;
         margin-left: 5%;
         position: relative;
-        @include mobile-only{
-            display: none;
-        }
+
     }
 
 
