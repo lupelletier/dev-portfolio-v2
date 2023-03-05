@@ -42,6 +42,11 @@ body {
       text-align: center;
       font-size: 2.5rem;
       padding-bottom: 5%;
+      @include mobile-only{
+        font-size: 1.5rem;
+        text-align: start;
+        margin-left: 10%;
+      }
     }
 
   }

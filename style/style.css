@@ -45,6 +45,13 @@ body section h1 {
   font-size: 2.5rem;
   padding-bottom: 5%;
 }
+@media screen and (max-width: 767px) {
+  body section h1 {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 10%;
+  }
+}
 body header {
   font-family: "Orbitron", sans-serif;
   display: flex;
@@ -264,6 +271,11 @@ body footer .footer-bottom p {
   right: 10%;
   position: absolute;
 }
+@media screen and (max-width: 767px) {
+  .timeline-container .arrow-right {
+    right: -1px;
+  }
+}
 .timeline-container .steps {
   display: flex;
   justify-content: space-between;
@@ -274,12 +286,24 @@ body footer .footer-bottom p {
   position: absolute;
   z-index: 2;
 }
+@media screen and (max-width: 767px) {
+  .timeline-container .steps {
+    width: 100%;
+    margin-top: 25%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.timeline-container .steps a {
+  text-decoration: none;
+  color: #EBF4F5;
+}
 .timeline-container .steps .step {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 25%;
+  width: 30%;
   height: 100%;
 }
 .timeline-container .steps .step h3 {
@@ -290,6 +314,12 @@ body footer .footer-bottom p {
 @media screen and (max-width: 1023px) {
   .timeline-container .steps .step h3 {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .timeline-container .steps .step h3 {
+    margin: 0;
+    font-size: 0.5rem;
   }
 }
 .timeline-container .steps .step .text {
@@ -303,6 +333,12 @@ body footer .footer-bottom p {
     font-size: 0.05rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .timeline-container .steps .step .text {
+    font-size: 0.05rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
 .timeline-container .steps .step .vertical {
   border-left: 2px solid #EBF4F5;
   height: 50px;
@@ -311,6 +347,11 @@ body footer .footer-bottom p {
 @media screen and (max-width: 1023px) {
   .timeline-container .steps .step .vertical {
     height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .timeline-container .steps .step .vertical {
+    margin-top: 10%;
   }
 }
 .timeline-container .step:hover {
