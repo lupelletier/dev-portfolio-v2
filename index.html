@@ -15,16 +15,31 @@
   <body>
     <header id="header" class="">
       <a href="./index.html" class="logo-lp"><h1>LP</h1></a>
-      <a class="responsive-label" href="#toogle"
-        ><i class="fa-solid fa-bars"></i
-      ></a>
-      <nav class="stroke" id="toggle">
+      <nav class="stroke">
         <ol>
           <li><a href="#">About</a></li>
           <li><a href="./dev.html">Dev</a></li>
           <li><a href="#">Crea</a></li>
           <li><a href="#">Projects</a></li>
         </ol>
+      </nav>
+      <!--    Responsive navigation    -->
+      <nav class="responsive">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"
+              ><li>Show me more</li></a
+            >
+          </ul>
+        </div>
       </nav>
     </header>
     <div class="fixed-social">
@@ -71,9 +86,68 @@
         </div>
       </div>
     </section>
+    <!-- Share recent projects -->
+    <section class="dev">
+      <h1>Récents Projets</h1>
+      <section class="project" id="drink-buddy">
+        <div class="left">
+          <video autoplay muted loop class="desktop-video">
+            <source
+              src="./videos/drink-buddy/partiels-1-reactapp-desktop.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video autoplay muted loop class="tablet-video">
+            <source
+              src="./videos/drink-buddy/partiels-1-reactapp-desktop.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <video
+            autoplay
+            muted
+            loop
+            id="drink-buddy-video"
+            class="mobile-video"
+          >
+            <source
+              src="./videos/drink-buddy/partiels-1-reactapp-mobile.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="right">
+          <p>Projet de Partiel</p>
+          <h3>Drink Buddy</h3>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptas, quod, quia, voluptates quae voluptatem quibusdam
+              consequuntur quos voluptatum quas quidem. Quisquam, quae. Quisquam
+              voluptas, quod, quia, voluptates quae voluptatem quibusdam
+            </p>
+          </div>
+          <div class="skills">
+            <p>React Javascript HTML SCSS GitHubPages</p>
+          </div>
+          <div class="social">
+            <a href="https://github.com/lupelletier/drink-buddy-app"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://lupelletier.github.io/drink-buddy-app/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <button class="button">
+        <a href="./dev.html">Voir plus de projets</a>
+      </button>
+    </section>
     <!-- make a timeline -->
     <section>
-      <h1>- Education -</h1>
+      <h1>Education</h1>
       <div class="timeline-container">
         <div class="timeline"></div>
         <div class="arrow-right"></div>
@@ -113,9 +187,6 @@
           </a>
         </div>
       </div>
-    </section>
-    <section>
-      <h1>- Récents Projets -</h1>
     </section>
 
     <footer>

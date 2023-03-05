@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: $color-1;
   color: $color-2 ;
+  overflow-x: hidden;
 
 
   
@@ -38,143 +39,43 @@ body {
     margin: 0 auto;
     margin-bottom: 10%;
     h1{
-      margin: 0 auto;
-      text-align: center;
-      font-size: 2.5rem;
-      padding-bottom: 5%;
-      @include mobile-only{
-        font-size: 1.5rem;
-        text-align: start;
-        margin-left: 10%;
-      }
-    }
-
-  }
-
-  // header
-
-  header{
-    font-family: $font-2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    background-color: $color-1;
-
-
-    .responsive-label{
-      display: none;
-      @include mobile-only{
-        display: block;
-        font-size: 30px;
-        color: $color-2;
-        cursor: pointer;
-        right: 0px;
-      }
-      
-    }
-    .responsive-label:active{
-      color: black;
-    }
-  /* NAVIGATION */
-    nav {
-      background: transparent;
-      padding: 50px 0;
-      @include mobile-only {
-        display: none;
-        flex-direction: column;
-          height: 220px;
-      }
-
-
-
-    }
-    nav ol {
-      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
       display: flex;
-
-    }
-    nav ol li{
-      list-style-position: inside;
-      text-align: center;
-      margin: 0 20px;
-    }
-    nav ol li a {
-
-
-      text-decoration: none;
-      color: $color-2;
-      font-weight: 500;
-
-    }
-    nav ol li ,
-    nav ol li :after,
-    nav ol li :before {
-      transition: all .5s;
-    }
-    nav ol li :hover {
-      color: $color-4;
-    }
-
-    nav ol li :active {
-      color: $color-4;
-    }
-
-    
-    /* stroke animation  */
-    nav.stroke ol li a,
-    nav.fill ol li a {
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+      padding: 15px 0;
       position: relative;
-    }
-    nav.stroke ol li :after,
-    nav.fill ol li :after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 0%;
-      content: '.';
-      color: transparent;
-      background: $color-4;
-      height: 1px;
-    }
-    nav.stroke ol li :hover:after {
-      width: 100%;
-
-    }
-    
-    nav.fill ol li {
-      transition: all 2s;
-    }
-    
-    nav.fill ol li :after {
-      text-align: left;
-      content: '.';
       margin: 0;
-      opacity: 0;
+      font-size: 25px;
+      max-width: 50%;
+      @include tablette-only{
+          width: 60%;
+      }
     }
-    nav.fill ol li :hover {
-      color: transparent;
-      z-index: 1;
-    }
-    nav.fill ol li :hover:after {
-      z-index: -10;
-      animation: fill 1s forwards;
-      -webkit-animation: fill 1s forwards;
-      -moz-animation: fill 1s forwards;
-      opacity: 1;
-    }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    h1::after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $color-2;
+      right: 0;
+      top: 50%;
+      margin-left: 5%;
+      position: relative;
+      @include mobile-only{
+          display: none;
+      }
+  }
+
   }
 
 
+
   
   
-}
+
 footer{
   position: absolute;
   left: 0;

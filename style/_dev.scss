@@ -6,6 +6,9 @@
     @include mobile-only{
         width: 100%;
     }
+    h3{
+        color: $color-4;
+    }
     h2{
         text-transform: uppercase;
     }
@@ -20,15 +23,17 @@
         position: relative;
         margin: 0;
         font-size: 25px;
-        width: 50%;
+        width: 100%;
         @include tablette-only{
             width: 70%;
         }
-      }
+        @include mobile-only{
+            font-size: large;
+      }}
     h1::after{
         content: "";
         display: block;
-        width: 50%;
+        width: 100%;
         height: 1px;
         background: $color-2;
         right: 0;
