@@ -20,6 +20,9 @@ body .logo-lp {
   text-decoration: none;
   color: #EBF4F5;
 }
+body .logo-lp:hover {
+  color: #fcf6bd;
+}
 body h2 {
   text-align: center;
   font-size: 30px;
@@ -32,9 +35,15 @@ body .center {
   text-align: center;
 }
 body section {
-  height: 50vh;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 10%;
+}
+body section h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 5%;
 }
 body header {
   font-family: "Orbitron", sans-serif;
@@ -166,12 +175,24 @@ body footer .footer-content h3 {
   text-transform: capitalize;
   line-height: 3rem;
 }
+@media screen and (max-width: 767px) {
+  body footer .footer-content h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 body footer .footer-content p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
   color: #cacdd2;
+}
+@media screen and (max-width: 767px) {
+  body footer .footer-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 body footer .footer-content .socials {
   display: none;
@@ -207,8 +228,6 @@ body footer .footer-content .socials {
 body footer .footer-bottom {
   background: #000;
   width: 100%;
-  padding-bottom: 2%;
-  padding-top: 2%;
 }
 body footer .footer-bottom p {
   text-align: center;
@@ -219,35 +238,22 @@ body footer .footer-bottom p {
 
 .timeline-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100%;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 15%;
+  margin-bottom: 40%;
+  transition: 0.5s;
 }
 @media screen and (max-width: 767px) {
   .timeline-container {
     transform: rotate(-90deg);
+    height: 50vh;
   }
-}
-.timeline-container h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0;
-}
-.timeline-container h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin: 0;
 }
 .timeline-container .timeline {
   border-top: 2px solid #EBF4F5;
   height: 2px;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+  width: 100%;
 }
 .timeline-container .arrow-right {
   width: 0;
@@ -258,24 +264,12 @@ body footer .footer-bottom p {
   right: 10%;
   position: absolute;
 }
-.timeline-container .arrow-right:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #EBF4F5;
-  top: -21px;
-  left: 1px;
-  right: 10%;
-  position: absolute;
-}
 .timeline-container .steps {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   position: absolute;
   z-index: 2;
@@ -285,17 +279,28 @@ body footer .footer-bottom p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 20%;
+  width: 25%;
   height: 100%;
 }
+.timeline-container .steps .step h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 5%;
+}
+@media screen and (max-width: 1023px) {
+  .timeline-container .steps .step h3 {
+    font-size: 0.8rem;
+  }
+}
 .timeline-container .steps .step .text {
-  height: 100px;
+  font-size: 0.4rem;
+  margin: 0;
   text-align: center;
   padding: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .timeline-container .steps .step .text {
-    transform: rotate(90deg);
+    font-size: 0.05rem;
   }
 }
 .timeline-container .steps .step .vertical {
@@ -303,18 +308,33 @@ body footer .footer-bottom p {
   height: 50px;
   align-self: center;
 }
-.timeline-container .steps:hover {
+@media screen and (max-width: 1023px) {
+  .timeline-container .steps .step .vertical {
+    height: 20px;
+  }
+}
+.timeline-container .step:hover {
   cursor: pointer;
 }
-.timeline-container .steps:hover .vertical {
+.timeline-container .step:hover .vertical {
+  transition: 0.5s;
   border-left: 3.5px solid #EBF4F5;
   height: 70px;
+}
+.timeline-container .step:hover .text {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #fcf6bd;
+}
+.timeline-container .step:hover h3 {
+  color: #fcf6bd;
 }
 
 .intro-container {
   width: 100%;
   margin: 0 auto;
   padding: 1%;
+  margin-bottom: 10%;
   border-left: 2px solid #EBF4F5;
   transition: 0.5s ease;
 }
@@ -322,7 +342,7 @@ body footer .footer-bottom p {
   text-align: start;
   font-size: 2.5rem;
   font-weight: 800;
-  color: #EBF4F5;
+  color: #fcf6bd;
   margin: 0;
   padding: 0;
 }
@@ -353,6 +373,22 @@ body footer .footer-bottom p {
     width: 80%;
   }
 }
+.intro-container .intro p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-align: start;
+}
+@media screen and (max-width: 767px) {
+  .intro-container .intro p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro-container .intro p {
+    font-size: 0.8rem;
+  }
+}
 .intro-container .social {
   display: flex;
   justify-content: space-between;
@@ -363,6 +399,9 @@ body footer .footer-bottom p {
   text-decoration: none;
   color: #EBF4F5;
   width: 100%;
+}
+.intro-container .social a:hover i {
+  color: #fcf6bd;
 }
 .intro-container .social i {
   color: #EBF4F5;
@@ -444,6 +483,7 @@ body footer .footer-bottom p {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  filter: grayscale(100%);
 }
 @media screen and (max-width: 767px) {
   .dev .project {
@@ -573,9 +613,16 @@ body footer .footer-bottom p {
   color: #EBF4F5;
   padding: 25%;
 }
+.dev .project .right .social a:hover i {
+  color: #fcf6bd;
+}
 .dev .project .right .social i {
   color: #EBF4F5;
   font-size: 1.5rem;
+}
+.dev .project:hover {
+  filter: grayscale(0%);
+  transition: 0.5s ease;
 }
 .dev .description {
   display: flex;
@@ -614,6 +661,9 @@ body footer .footer-bottom p {
   text-decoration: none;
   color: #EBF4F5;
   width: 100%;
+}
+.fixed-social ul li a:hover i {
+  color: #fcf6bd;
 }
 .fixed-social ul li i {
   color: #EBF4F5;
