@@ -343,6 +343,13 @@ body footer .footer-bottom p {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 1023px) {
+  .intro-container h1 {
+    font-size: 1.5rem;
+    max-width: 50%;
+    text-wrap: wrap;
+  }
+}
 @media screen and (max-width: 767px) {
   .intro-container h1 {
     font-size: 1rem;
@@ -415,6 +422,11 @@ body footer .footer-bottom p {
   color: #EBF4F5;
   width: 100%;
 }
+@media screen and (max-width: 1023px) {
+  .intro-container .social a {
+    padding: 5%;
+  }
+}
 .intro-container .social a:hover i {
   color: #fcf6bd;
 }
@@ -435,6 +447,8 @@ body footer .footer-bottom p {
 @media screen and (max-width: 1023px) {
   .intro-container .social {
     width: 100%;
+    top: 0;
+    right: 0;
   }
   .intro-container .social i {
     font-size: 1.5rem;
