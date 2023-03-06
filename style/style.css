@@ -431,6 +431,11 @@ body footer .footer-bottom p {
   width: 80%;
 }
 @media screen and (max-width: 767px) {
+  .dev .button {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 767px) {
   .dev {
     width: 100%;
   }
