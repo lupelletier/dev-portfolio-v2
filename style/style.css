@@ -372,7 +372,7 @@ body footer .footer-bottom p {
 @media screen and (max-width: 767px) {
   .intro-container h1 {
     font-size: 1rem;
-    max-width: 50%;
+    width: 20%;
     text-wrap: wrap;
   }
 }
@@ -402,6 +402,11 @@ body footer .footer-bottom p {
     width: 90%;
   }
 }
+@media screen and (max-width: 767px) {
+  .intro-container .intro {
+    width: 80%;
+  }
+}
 .intro-container .intro p {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -412,7 +417,7 @@ body footer .footer-bottom p {
 @media screen and (max-width: 767px) {
   .intro-container .intro p {
     font-size: 0.8rem;
-    width: 70%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -449,7 +454,7 @@ body footer .footer-bottom p {
 }
 @media screen and (max-width: 767px) {
   .intro-container .social {
-    width: 100%;
+    width: 20%;
     height: 50%;
     flex-direction: column;
   }
