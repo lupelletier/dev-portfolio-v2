@@ -29,6 +29,7 @@
         }
         @include mobile-only{
             font-size: large;
+            margin-left: 5%;
       }}
     h1::after{
         content: "";

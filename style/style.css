@@ -461,6 +461,7 @@ body footer .footer-bottom p {
 @media screen and (max-width: 767px) {
   .dev h1 {
     font-size: large;
+    margin-left: 5%;
   }
 }
 .dev h1::after {
