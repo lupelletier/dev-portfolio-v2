@@ -24,7 +24,9 @@
         margin: 0;
         padding: 0;
         @include mobile-only{
-            font-size: 1.5rem;
+            font-size: 1rem;
+            max-width: 50%;
+            text-wrap: wrap;
         }
     }
     h2{
@@ -42,7 +44,7 @@
 
     .intro{
         padding-left: 10%;
-        width: 50%;
+        width: 80%;
         -webkit-filter: grayscale(50%);
         filter: grayscale(100%);
 
@@ -50,6 +52,10 @@
             display: flex;
             justify-content: space-between;
             width: 80%;
+        }
+        @include mobile-only{
+            display: flex;
+            justify-content: space-between;
 
         }
         p{
@@ -57,8 +63,10 @@
             font-size: 0.8rem;
             font-weight: 200;
             text-align: start;
+            width: 100%;
             @include mobile-only{
                 font-size: 0.8rem;
+                width: 70%;
             }
             @include tablette-only{
                 font-size: 0.8rem;
@@ -74,7 +82,8 @@
         display: flex;
         justify-content: space-between;
         width: 25%;
-        padding-top: 3%;
+
+        padding:3%;
         
         a{
             text-decoration: none;

@@ -9,9 +9,8 @@
     margin-bottom: 10%;
     transition: 0.5s;
     @include mobile-only{
-        
         transform: rotate(-90deg); 
-            height: 50vh;
+        height: 50vh;
     }
 
 
@@ -45,9 +44,8 @@
         z-index: 2;
         
         @include mobile-only{
-            margin-right: 60%;
+            margin-right: 80%;
             width: 100%;
-
             align-items: baseline;
             justify-content: space-between;
 
@@ -63,7 +61,6 @@
             text-align: center;
             width: 30%;
             height: 100%;
-            position: relative;
             @include mobile-only{
                 width: 20%;
                 height: 100%;
@@ -78,23 +75,23 @@
                     font-size: 0.8rem;
                 }
                 @include mobile-only{
-  
                     margin: 0;
                     font-size: 0.5rem;
-                        width: 20%;
+                    width: 20%;
                 }
             }
             .text{
-                font-size: 0.4rem;
+                font-size: 0.7rem;
                 margin: 0;
                 text-align: center;
                 padding:  10px;
+                font-weight: 100;
                 @include tablette-only{
-                    font-size: 0.05rem;
+                    font-size: 0.5rem;
                 }
                 @include mobile-only{
                     transform: rotate(90deg);
-                    font-size: 0.05rem;
+                    font-size: 0.6rem;
                     font-family: $font-3;
                     width: 100%;
  
@@ -125,11 +122,17 @@
             transition: 0.5s;
             border-left: 3.5px solid $color-2;
             height: calc(50px + 20px);
+            @include mobile-only{
+                height: calc(20px + 40px);
+            }
         }
         .text{
-            font-size: 0.6rem;
+            font-size: 1rem;
             font-weight: 600;
             color: $color-4;
+            @include tablette-only{
+                font-size: 0.7rem;
+            }
         }
         h3{
             color: $color-4;
