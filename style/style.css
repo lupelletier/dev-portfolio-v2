@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Orbitron", sans-serif;
-  padding: 0 auto;
+  padding-top: 110px;
   background-color: #223149;
   color: #EBF4F5;
   margin: 0;
@@ -548,7 +548,7 @@ body footer .footer-bottom p {
   }
 }
 .dev .project p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 .dev .project .left {
@@ -638,7 +638,7 @@ body footer .footer-bottom p {
   font-family: "Poppins", sans-serif;
   color: #e8edfb;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: right;
 }
 @media screen and (max-width: 767px) {
@@ -755,7 +755,7 @@ html {
 
 body {
   font-family: "Orbitron", sans-serif;
-  padding: 0 auto;
+  padding-top: 110px;
   background-color: #223149;
   color: #EBF4F5;
   margin: 0;
@@ -939,25 +939,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 20px 20px;
   background-color: #223149;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 100;
+  height: 40px;
+  box-shadow: 0 0 0.75rem rgb(3, 7, 47);
   /* NAVIGATION */
   /* stroke animation  */
 }
 @media screen and (max-width: 767px) {
   header {
-    padding: 0 5px;
+    padding: 10px;
+    width: 100%;
   }
 }
 header .stroke {
-  background: transparent;
-  padding: 50px 0;
+  padding: 40px;
 }
 @media screen and (max-width: 767px) {
   header .stroke {
     display: none;
-    flex-direction: column;
-    height: 220px;
   }
 }
 header .stroke ol {
@@ -1032,13 +1037,13 @@ header nav.fill ol li :hover:after {
 @media screen and (max-width: 767px) {
   .responsive {
     display: block;
+    padding-right: 5%;
   }
 }
 .responsive #menuToggle {
   display: block;
   position: relative;
   top: 0;
-  right: 0;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
