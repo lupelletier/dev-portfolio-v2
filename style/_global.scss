@@ -2,9 +2,10 @@
 @import "mixins";
 
 html {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
+
+
+  overflow-x: hidden;
+
 }
 body {
 
@@ -17,9 +18,7 @@ body {
 
 margin: 0;
   // responsive
-  width: 100%; 
-  height: 100%;
-  overflow-y: auto;
+
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 

@@ -54,7 +54,8 @@
         -webkit-filter: grayscale(50%);
         filter: grayscale(100%);
         @include mobile-only{
-            margin: 10% 0 20% 0 ;
+            width: 90%;
+            margin: 15% auto;
         }
         p{
             font-size: 0.7rem;

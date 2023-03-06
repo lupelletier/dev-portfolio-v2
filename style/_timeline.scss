@@ -45,7 +45,7 @@
         z-index: 2;
         
         @include mobile-only{
-            margin-right: 50%;
+            margin-right: 60%;
             width: 100%;
 
             align-items: baseline;
@@ -64,6 +64,11 @@
             width: 30%;
             height: 100%;
             position: relative;
+            @include mobile-only{
+                width: 20%;
+                height: 100%;
+                margin-top: 20%;
+            }
 
             h3{
                 font-size: 1.2rem;
@@ -92,6 +97,8 @@
                     font-size: 0.05rem;
                     font-family: $font-3;
                     width: 100%;
+ 
+
                 }
 
             }
@@ -105,6 +112,7 @@
                 }
                 @include mobile-only{
                    margin-top: 10%;
+                   height: 20px;
                 }
 
             }

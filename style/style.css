@@ -13,9 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,9 +22,6 @@ body {
   background-color: #223149;
   color: #EBF4F5;
   margin: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -218,7 +213,7 @@ body footer .footer-bottom p {
 }
 @media screen and (max-width: 767px) {
   .timeline-container .steps {
-    margin-right: 50%;
+    margin-right: 60%;
     width: 100%;
     align-items: baseline;
     justify-content: space-between;
@@ -236,6 +231,13 @@ body footer .footer-bottom p {
   width: 30%;
   height: 100%;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .timeline-container .steps .step {
+    width: 20%;
+    height: 100%;
+    margin-top: 20%;
+  }
 }
 .timeline-container .steps .step h3 {
   font-size: 1.2rem;
@@ -286,6 +288,7 @@ body footer .footer-bottom p {
 @media screen and (max-width: 767px) {
   .timeline-container .steps .step .vertical {
     margin-top: 10%;
+    height: 20px;
   }
 }
 .timeline-container .step:hover {
@@ -481,7 +484,8 @@ body footer .footer-bottom p {
 }
 @media screen and (max-width: 767px) {
   .dev .project {
-    margin: 10% 0 20% 0;
+    width: 90%;
+    margin: 15% auto;
   }
 }
 .dev .project p {
@@ -686,9 +690,7 @@ body footer .footer-bottom p {
 }
 
 html {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -697,9 +699,6 @@ body {
   background-color: #223149;
   color: #EBF4F5;
   margin: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
