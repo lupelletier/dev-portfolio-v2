@@ -50,6 +50,14 @@ body section {
   margin: 0 auto;
   margin-bottom: 10%;
 }
+@media screen and (max-width: 767px) {
+  body section {
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin-top: 10%;
+  }
+}
 body section h1 {
   text-transform: uppercase;
   font-weight: 400;
@@ -180,7 +188,9 @@ body footer .footer-bottom p {
 @media screen and (max-width: 767px) {
   .timeline-container {
     transform: rotate(-90deg);
-    height: 50vh;
+    height: 60vh;
+    margin-top: 20%;
+    margin-bottom: 20%;
   }
 }
 .timeline-container .timeline {
@@ -188,7 +198,8 @@ body footer .footer-bottom p {
   height: 2px;
   width: 100%;
 }
-.timeline-container .arrow-right {
+
+.arrow-right {
   width: 0;
   height: 0;
   border-top: 21px solid transparent;
@@ -198,11 +209,12 @@ body footer .footer-bottom p {
   position: absolute;
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .arrow-right {
+  .arrow-right {
     right: -1px;
   }
 }
-.timeline-container .steps {
+
+.steps {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -213,18 +225,18 @@ body footer .footer-bottom p {
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .steps {
-    margin-right: 80%;
+  .steps {
     width: 100%;
+    margin-top: 30%;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
-.timeline-container .steps a {
+.steps a {
   text-decoration: none;
   color: #EBF4F5;
 }
-.timeline-container .steps .step {
+.steps .step {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,89 +245,96 @@ body footer .footer-bottom p {
   height: 100%;
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .steps .step {
-    width: 20%;
-    height: 100%;
-    margin-top: 20%;
+  .steps .step {
+    width: 100%;
   }
 }
-.timeline-container .steps .step h3 {
+.steps .step h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 5%;
 }
 @media screen and (max-width: 1023px) {
-  .timeline-container .steps .step h3 {
+  .steps .step h3 {
     font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .steps .step h3 {
-    margin: 0;
+  .steps .step h3 {
+    transform: rotate(90deg);
     font-size: 0.5rem;
-    width: 20%;
+    width: 100%;
+    padding-right: 40%;
   }
 }
-.timeline-container .steps .step .text {
+.steps .step .text {
   font-size: 0.7rem;
   margin: 0;
   text-align: center;
   padding: 10px;
   font-weight: 100;
+  align-items: baseline;
 }
 @media screen and (max-width: 1023px) {
-  .timeline-container .steps .step .text {
+  .steps .step .text {
     font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .steps .step .text {
+  .steps .step .text {
     transform: rotate(90deg);
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
+    margin-top: 30%;
+    margin-bottom: 0;
     width: 100%;
+    height: 100%;
+    padding-right: 30%;
+    text-align: left;
   }
 }
-.timeline-container .steps .step .vertical {
+.steps .step .vertical {
   border-left: 2px solid #EBF4F5;
   height: 50px;
   align-self: center;
 }
 @media screen and (max-width: 1023px) {
-  .timeline-container .steps .step .vertical {
+  .steps .step .vertical {
     height: 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .steps .step .vertical {
-    margin-top: 10%;
-    height: 20px;
+  .steps .step .vertical {
+    margin-top: 30%;
+    height: 30px;
   }
 }
-.timeline-container .step:hover {
+
+.step:hover {
   cursor: pointer;
 }
-.timeline-container .step:hover .vertical {
+.step:hover .vertical {
   transition: 0.5s;
   border-left: 3.5px solid #EBF4F5;
   height: 70px;
 }
 @media screen and (max-width: 767px) {
-  .timeline-container .step:hover .vertical {
+  .step:hover .vertical {
     height: 60px;
   }
 }
-.timeline-container .step:hover .text {
+.step:hover .text {
   font-size: 1rem;
   font-weight: 600;
   color: #fcf6bd;
 }
 @media screen and (max-width: 1023px) {
-  .timeline-container .step:hover .text {
+  .step:hover .text {
     font-size: 0.7rem;
   }
 }
-.timeline-container .step:hover h3 {
+.step:hover h3 {
   color: #fcf6bd;
 }
 
@@ -380,13 +399,7 @@ body footer .footer-bottom p {
   .intro-container .intro {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .intro-container .intro {
-    display: flex;
-    justify-content: space-between;
+    width: 90%;
   }
 }
 .intro-container .intro p {
@@ -767,6 +780,14 @@ body section {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 10%;
+}
+@media screen and (max-width: 767px) {
+  body section {
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin-top: 10%;
+  }
 }
 body section h1 {
   text-transform: uppercase;

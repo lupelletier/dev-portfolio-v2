@@ -56,13 +56,9 @@
         @include tablette-only{
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 90%;
         }
-        @include mobile-only{
-            display: flex;
-            justify-content: space-between;
 
-        }
         p{
             font-family: $font-3;
             font-size: 0.8rem;
