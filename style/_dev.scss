@@ -123,6 +123,9 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-end;
+            h3{
+                font-size: x-large;
+            }
             @include mobile-only{
                 width: 70%;
                 margin: 0;
@@ -136,8 +139,8 @@
 
                     font-family: $font-3;
                     color: $color-6;
-                    font-size: 0.9rem;
-                    font-weight: 400;
+                    font-size: 0.85rem;
+                    font-weight: 300;
                     text-align: right;
                     @include mobile-only{
                         font-size: 0.3rem;
