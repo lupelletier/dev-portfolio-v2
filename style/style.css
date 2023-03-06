@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -173,7 +174,7 @@ body footer .footer-bottom p {
   align-items: center;
   height: 100%;
   margin-top: 15%;
-  margin-bottom: 40%;
+  margin-bottom: 10%;
   transition: 0.5s;
 }
 @media screen and (max-width: 767px) {
@@ -691,6 +692,7 @@ body footer .footer-bottom p {
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
